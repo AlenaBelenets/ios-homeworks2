@@ -8,12 +8,11 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
-       var postTitle = Post(title: "Профиль")
+
        var closure: (() -> Void)?
 
        override func viewDidLoad() {
            super.viewDidLoad()
            self.view.backgroundColor = .systemMint
-           //self.postTitle.title = self.title
         }
 }

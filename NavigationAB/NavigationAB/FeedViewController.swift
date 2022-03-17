@@ -8,11 +8,13 @@
 import UIKit
 
 final class FeedViewController: UIViewController {
+
     private lazy var customView: CustomView = {
         let view = CustomView()
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
+    
     let button = UIButton(frame: CGRect(x: 45, y: 670, width: 300, height: 50))
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,9 +39,7 @@ final class FeedViewController: UIViewController {
 
     @objc private func didTapButton() {
         let postViewController = PostViewController()
-        postViewController.closure = {
-        }
-        postViewController.title = "Мои фото"
+        postViewController.post = Post(title: "Мои новые фото")
         navigationController?.pushViewController(postViewController, animated: true)
     }
 
@@ -49,16 +49,6 @@ final class FeedViewController: UIViewController {
         self.view.addSubview(self.button)
     }
 
-    override func prepare(for seque: UIStoryboardSegue, sender: Any?) {
-        guard
-            seque.identifier == "showProfileViewController",
-            let destination = seque.destination as? ProfileViewController
-        else {return}
-        destination.postTitle.title = "Профиль"
-    }
 }
 
-struct Post {
-    var title: String
-}
 

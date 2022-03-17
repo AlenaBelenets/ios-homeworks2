@@ -9,7 +9,7 @@ import UIKit
 
 final class PostViewController: UIViewController {
 
-    var closure: (() -> Void)?
+    var post: Post?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,8 +18,9 @@ final class PostViewController: UIViewController {
     }
 
         private func setupViews() {
-            self.title = "Галерея"
             createCustomNavigationBar()
+
+            self.navigationItem.title = self.post?.title
 
             let rightButton = createCustomButtom(
                 imageName: "ellipsis.circle",

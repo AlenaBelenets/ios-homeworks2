@@ -19,6 +19,7 @@
 		922842F827D223C20047899C /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922842F727D223C20047899C /* PostViewController.swift */; };
 		922842FA27D223D90047899C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922842F927D223D90047899C /* ProfileViewController.swift */; };
 		922842FC27D223FE0047899C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922842FB27D223FE0047899C /* TabBarController.swift */; };
+		9246D0DA27E3B42A00D0D4E9 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9246D0D927E3B42A00D0D4E9 /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		922842F727D223C20047899C /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		922842F927D223D90047899C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		922842FB27D223FE0047899C /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		9246D0D927E3B42A00D0D4E9 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 		922842D827D222550047899C /* NavigationAB */ = {
 			isa = PBXGroup;
 			children = (
+				9246D0D827E3B3F300D0D4E9 /* Data */,
 				922842D927D222550047899C /* AppDelegate.swift */,
 				922842DB27D222550047899C /* SceneDelegate.swift */,
 				922842ED27D222B00047899C /* InfoViewController.swift */,
@@ -83,6 +86,14 @@
 				922842E727D222570047899C /* Info.plist */,
 			);
 			path = NavigationAB;
+			sourceTree = "<group>";
+		};
+		9246D0D827E3B3F300D0D4E9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				9246D0D927E3B42A00D0D4E9 /* Post.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				922842F827D223C20047899C /* PostViewController.swift in Sources */,
+				9246D0DA27E3B42A00D0D4E9 /* Post.swift in Sources */,
 				922842DE27D222550047899C /* ViewController.swift in Sources */,
 				922842F227D223500047899C /* ExtentionViewController.swift in Sources */,
 				922842FC27D223FE0047899C /* TabBarController.swift in Sources */,
